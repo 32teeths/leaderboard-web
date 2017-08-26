@@ -1,0 +1,15 @@
+<div flex>
+    <section class="header" layout="row" layout-sm="column" layout-wrap flex>
+        <div flex>
+            <img class="logo" src="app/assets/logo.png" alt="">
+        </div>
+        <div layout="row" flex layout-align="end end">
+            <md-button ui-sref-active="active" ui-sref="landing.counts">Count</md-button>
+            <md-button ui-sref-active="active">Champ</md-button>
+            <md-button ui-sref-active="active" ui-sref="landing.times">Coffee Times</md-button>
+        </div>
+    </section>
+    <md-content layout="row" layout-align="center">
+        <ui-view flex class="slide"></ui-view>
+    </md-content>
+</div>

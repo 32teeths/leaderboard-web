@@ -1,0 +1,31 @@
+<div layout="column" ng-repeat="commit in feed.commits">
+    <!-- <h3 class="md-subhead">{{day.$id|date}}</h3> -->
+    <md-card layout="row">
+        <md-card-content layout="column" flex>
+            <div layout="row">
+                <div flex="30">
+                    <img ng-src="{{commit.body.actor.links.avatar.href}}" class="md-card-image" alt="Washed Out">
+
+                    <!-- <md-button class="md-icon-button" aria-label="Favorite" ng-click="listing.like(person)">
+                        <md-icon>
+                            <i class="material-icons">favorite_border</i>
+                        </md-icon>
+                    </md-button> -->
+                </div>
+                <div flex="50">
+                    <p class="md-body-1 name text-center">
+                        <!-- <small>{{commit.body}}</small> -->
+                    </p>
+                </div>
+                <div flex="20">
+                    <md-tooltip md-direction="left">
+                        <!-- {{person.object.actions[0].value=='coffee'?'Coffee':'Tea'}} -->
+                        {{ commit.time }}
+
+                    </md-tooltip>
+                    <!-- <img ng-src="{{commit.body.actor.links.avatar.href}}" class="md-avatar" alt="{{todos[0].who}}" /> -->
+                </div>
+            </div>
+        </md-card-content>
+    </md-card>
+</div>

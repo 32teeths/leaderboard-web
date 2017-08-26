@@ -1,0 +1,44 @@
+html,
+body,
+#root {
+    margin: 0;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: white;
+}
+
+body,
+h1,
+h2,
+h3 {
+    font-weight: 300
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+        color: #5aadbb;
+    }
+}
+
+md-content {
+    background: white;
+}
+
+// Landing Block
+landing {
+    margin-top: 40px;
+    feed {
+        margin-top: 40px;
+        display: block;
+        max-height: 600px;
+        overflow: scroll;
+        md-card{
+            height: 120px;
+        }
+    }
+}

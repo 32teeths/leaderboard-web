@@ -18,5 +18,10 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
     .state('landing.feed', {
       url: 'feed',
       component: 'feed'
+    })
+    .state('landing.developer', {
+      url: 'developer/:userId',
+      component: 'developer'
     });
+
 }

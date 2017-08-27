@@ -3,7 +3,7 @@
     <md-card layout="row">
         <md-card-content layout="column" flex>
             <div layout="row">
-                <div flex="30">
+                <div flex="10">
                     <img ng-src="{{commit.body.actor.links.avatar.href}}" class="md-card-image" alt="Washed Out">
 
                     <!-- <md-button class="md-icon-button" aria-label="Favorite" ng-click="listing.like(person)">
@@ -12,8 +12,12 @@
                         </md-icon>
                     </md-button> -->
                 </div>
-                <div flex="50">
+                <div flex="70">
+                    <a ui-sref="landing.developer({userId:commit.body.actor.username})">
+                        {{commit.body.actor.display_name}}
+                    </a>
                     <p class="md-body-1 name text-center">
+
                         <!-- <small>{{commit.body}}</small> -->
                     </p>
                 </div>

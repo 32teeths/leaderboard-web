@@ -2,7 +2,7 @@ angular
     .module('app')
 
     .component('feed', {
-        templateUrl: 'app/components/feed//feed.html',
+        templateUrl: 'app/components/feed/feed.html',
         controller: 'FeedController',
         controllerAs: 'feed'
     })
